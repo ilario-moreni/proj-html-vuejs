@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template lang="">
-  <div>
+  <div class="App">
     <AppHeader />
     <AppMain />
     <AppFooter />
@@ -28,4 +28,8 @@ export default {
 <style lang="scss">
   @use './styles/general.scss';
   @use './styles/partials/variables.scss' as *;
+
+  .App{
+    min-height: 100vh;
+  }
 </style>

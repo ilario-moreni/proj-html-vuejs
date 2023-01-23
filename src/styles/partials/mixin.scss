@@ -1,0 +1,13 @@
+@use './variables.scss' as *;
+
+@mixin ul_flex_unstyled {
+    list-style-type: none;
+    display: flex;
+
+    li {
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
