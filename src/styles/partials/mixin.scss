@@ -3,6 +3,8 @@
 @mixin ul_flex_unstyled {
     list-style-type: none;
     display: flex;
+    padding-inline-start: 0;
+    margin: 0;
 
     li {
         a {
