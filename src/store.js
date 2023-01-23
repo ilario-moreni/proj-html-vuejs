@@ -31,45 +31,45 @@ export const store = reactive({
     footer_map_image: 'https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=Notting+Hill,London&maptype=roadmap&zoom=14&size=382x300&markers=icon:https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2017/03/construction_map_pin.png|Notting+Hill,London&scale=2',
     contacts: [
         {
-            icon: '<i class="fa-solid fa-globe"></i>',
+            icon: 'fa-solid fa-globe',
             contact_info: 'Corporate Location 1600 Amphitheatre Parkway London WC1 1BA'
         },
         {
-            icon: '<i class="fa-solid fa-house-chimney"></i>',
+            icon: 'fa-solid fa-house-chimney',
             contact_info: 'Residential Location 9521 Broadsberry Avenue Paddington RC7 9ZA'
         },
         {
-            icon: '<i class="fa-solid fa-phone-flip"></i>',
+            icon: 'fa-solid fa-phone-flip',
             contact_info: '1.800.458.556 / 1.800.532.2112'
         },
         {
-            icon: '<i class="fa-solid fa-phone-flip"></i>',
+            icon: 'fa-solid fa-phone-flip',
             contact_info: 'info@your-domain.com'
         },
         {
-            icon: '<i class="fa-regular fa-clock"></i>',
+            icon: 'fa-regular fa-clock',
             contact_info: 'Monday – Friday: 9:00 AM – 6:00 PM'
         },
         {
-            icon: '<i class="fa-regular fa-clock"></i>',
+            icon: 'fa-regular fa-clock',
             contact_info: 'Saturday – Sunday: 9:00 AM – 12:00 PM'
         }
     ],
     social: [
         {
-            icon: '<i class="fa-brands fa-facebook-f"></i>',
+            icon: 'fa-brands fa-facebook-f',
             url: '#'
         },
         {
-            icon: '<i class="fa-brands fa-twitter"></i>',
+            icon: 'fa-brands fa-twitter',
             url: '#'
         },
         {
-            icon: '<i class="fa-brands fa-youtube"></i>',
+            icon: 'fa-brands fa-youtube',
             url: '#'
         },
         {
-            icon: '<i class="fa-brands fa-instagram"></i>',
+            icon: 'fa-brands fa-instagram',
             url: '#'
         }
     ]
