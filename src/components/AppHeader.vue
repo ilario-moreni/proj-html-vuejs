@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template lang="">
-    <div class="AppHeader container py-4 px-0">
+    <div class="AppHeader container py-4">
         <!-- left-side header -->
         <div class="header_logo_container">
             <img src="/src/assets/img/construction_logo_retina.png" alt="">
@@ -32,7 +32,7 @@ export default {
             </div>
             <!-- get quote button -->
             <div>
-                <button type="button" class="btn rounded-0 py-2 px-4" id="get_quote_button">GET QUOTE</button>
+                <button type="button" class="btn rounded-0" id="get_quote_button">GET QUOTE</button>
             </div>
         </div>
     </div>
@@ -73,6 +73,7 @@ export default {
     }
 
     #get_quote_button{
+        padding: 10px 32px;
         font-weight: 500;
         background-color: $avada_yellow;
     }
