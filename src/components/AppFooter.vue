@@ -14,7 +14,7 @@ export default {
     <div>
         <div class="bg_contacts">
             <div class="container">
-                <div class="row">
+                <div class="row row-cols-4 gx-5">
                     <!-- learn-more col -->
                     <div class="col">
                         <div>
@@ -43,7 +43,12 @@ export default {
                             </li>
                         </ul>
                     </div>
-                    <div class="col"></div>
+                    <div class="col">
+                        <h3>Our location</h3>
+                        <div>
+                            <img class='maps_image' src="/src/assets/img/maps_image.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,6 +80,7 @@ export default {
             font-weight: 700;
             text-transform: uppercase;
             color: $avada_yellow;
+            margin-bottom: 2rem;
         }
 
         .footer_construction_p{
@@ -108,5 +114,10 @@ export default {
         .font_14{
             font-size: 14px;
         }
+    }
+
+    .maps_image{
+        width: 100%;
+        height: 100%;
     }
 </style>
