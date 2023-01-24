@@ -6,23 +6,23 @@ export default {
 
 <template lang="">
     <div class="container text-center">
-        <div class="row row-cols-5 justify-content-between">
-            <div class="col  my_specialist_card rounded-3">
+        <div class="row">
+            <div class="col me-3 my_specialist_card rounded-3">
                 <div class="specialist_icon my-2"><i class="fa-regular fa-building"></i></div>
                 <h3>Buildings</h3>
                 <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
             </div>
-            <div class="col  my_specialist_card rounded-3">
+            <div class="col mx-3 my_specialist_card rounded-3">
                 <div class="specialist_icon my-2"><i class="fa-solid fa-rotate"></i></div>
                 <h3>Renovate</h3>
                 <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
             </div>
-            <div class="col  my_specialist_card rounded-3">
+            <div class="col mx-3 my_specialist_card rounded-3">
                 <div class="specialist_icon my-2"><i class="fa-solid fa-house-chimney"></i></div>
                 <h3>Construct</h3>
                 <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
             </div>
-            <div class="col  my_specialist_card rounded-3">
+            <div class="col ms-3 my_specialist_card rounded-3">
                 <div class="specialist_icon my-2"><i class="fa-solid fa-truck"></i></div>
                 <h3>Exclusive</h3>
                 <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
