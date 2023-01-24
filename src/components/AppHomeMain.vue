@@ -1,9 +1,11 @@
 <script>
 import AppHomeJumbo from './AppHomeJumbo.vue';
+import HomeSectionSpecialist from './HomeSectionSpecialist.vue';
 export default {
     name: 'AppHomeMain',
     components:{
         AppHomeJumbo,
+        HomeSectionSpecialist
     }
 }
 </script>
@@ -11,6 +13,7 @@ export default {
 <template lang="">
     <div>
         <AppHomeJumbo />
+        <HomeSectionSpecialist />
     </div>
 </template>
 

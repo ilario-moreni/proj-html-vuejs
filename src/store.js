@@ -1,6 +1,7 @@
 import { reactive } from 'vue';
 
 export const store = reactive({
+    /* header */
     header_sections: [
         {
             label: 'Home',
@@ -28,6 +29,12 @@ export const store = reactive({
             active: false,
         }
     ],
+    /* main */
+
+
+
+
+    /* footer */
     footer_map_image: 'https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&language=en&center=Notting+Hill,London&maptype=roadmap&zoom=14&size=382x300&markers=icon:https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2017/03/construction_map_pin.png|Notting+Hill,London&scale=2',
     contacts: [
         {
