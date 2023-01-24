@@ -1,31 +1,38 @@
 <script>
+import JumboFreequote from './JumboFreequote.vue';
 export default {
-    name: 'AppHomeJumbo'
+    name: 'AppHomeJumbo',
+    components:{
+        JumboFreequote,
+    }
 }
 </script>
 
 <template lang="">
-    <div class="bg_home_jumbo">
-        <div class="container my_jumbo_container">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <h1>BUILDING INSPIRING SPACES</h1>
+    <div>
+        <div class="bg_home_jumbo">
+            <div class="container my_jumbo_container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <h1>BUILDING INSPIRING SPACES</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <h3>We Build Inspiring Residential & Commercial Spaces</h3>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <h3>We Build Inspiring Residential & Commercial Spaces</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <button type="button" class="my_button_black rounded-0">EXPLORE RECENT WORK</button>
-                </div>
-                <div class="col-auto">
-                    <button type="button" class="my_button rounded-0">GET A QUOTE TODAY</button>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <button type="button" class="my_button_black rounded-0">EXPLORE RECENT WORK</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="button" class="my_button rounded-0">GET A QUOTE TODAY</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <JumboFreequote />
     </div>
 </template>
 
