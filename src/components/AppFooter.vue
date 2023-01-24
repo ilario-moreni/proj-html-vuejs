@@ -1,7 +1,7 @@
 <script>
 import { store } from '../store';
 export default {
-    name: 'AppMain',
+    name: 'AppFooter',
     data(){
         return{
             store,
@@ -27,7 +27,7 @@ export default {
                             </p>
                         </div>
                         <div>
-                            <button type="button" class="btn rounded-0" id="learn_more_button">LEARN MORE</button>
+                            <button type="button" class="rounded-0 my_button" id="learn_more_button">LEARN MORE</button>
                         </div>
                     </div>
                     <!-- latest-tweets col -->
@@ -98,11 +98,7 @@ export default {
         }
     }
 
-    #learn_more_button{
-        padding: 10px 32px;
-        font-weight: 500;
-        background-color: $avada_yellow;
-    }
+    
 
     .footer_contacts_ul{
         @include mixin.ul_flex_unstyled;

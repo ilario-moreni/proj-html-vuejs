@@ -1,12 +1,12 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
+import AppHomeMain from './components/AppHomeMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import { store } from './store';
 export default {
   components:{
     AppHeader,
-    AppMain,
+    AppHomeMain,
     AppFooter
   },
   data(){
@@ -20,7 +20,7 @@ export default {
 <template lang="">
   <div class="App">
     <AppHeader />
-    <AppMain />
+    <AppHomeMain />
     <AppFooter />
   </div>
 </template>

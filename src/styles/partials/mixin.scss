@@ -13,3 +13,11 @@
         }
     }
 }
+
+
+@mixin my_button {
+    padding: 10px 32px;
+    font-weight: 500;
+    background-color: $avada_yellow;
+    border: none;
+}
