@@ -12,6 +12,7 @@ export default {
 
 <template lang="">
     <div>
+        <!-- contacts -->
         <div class="bg_contacts">
             <div class="container">
                 <div class="row row-cols-4 gx-5">
@@ -52,14 +53,19 @@ export default {
                 </div>
             </div>
         </div>
-        <div>
+        <!-- socials -->
+        <div class="bg_socials py-4">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <span>
+                            ©COPYRIGHT 2012 - 2023 | AVADA THEME BY <a href="">THEMEFUSION</a>  | ALL RIGHTS RESERVED | POWERED BY <a href="">WORDPRESS</a> 
+                        </span>
                     </div>
-                    <div class="col">
-
+                    <div class="col-auto">
+                        <div>
+                            <i v-for="item in store.social" :class="item.icon" class="social_icon" :href="item.url"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,5 +125,26 @@ export default {
     .maps_image{
         width: 100%;
         height: 100%;
+    }
+
+    .bg_socials{
+        background-color: black;
+        color: $grey_font_color;
+        
+
+        span{
+            font-size: 12px;
+            letter-spacing: 0;
+        }
+        a{
+            font-size: 12px;
+            color:darkgray;
+            text-decoration: none;
+        }
+
+        .social_icon{
+            font-size:18px;
+            margin-left: 1.5rem;
+        }
     }
 </style>
