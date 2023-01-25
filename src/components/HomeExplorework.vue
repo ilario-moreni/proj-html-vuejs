@@ -15,9 +15,55 @@ export default {
                 </div>
             </div>
             <div class="row justify-content-between align-items-center">
-                <div class="col"><img src="/src/assets/img/project2-featured-15013609.jpg" class="project_cards" alt=""></div>
-                <div class="col"><img src="/src/assets/img/project1-featured-294276386.jpg" class="project_cards" alt=""></div>
-                <div class="col"><img src="/src/assets/img/project3-featured-189023420.jpg" class="project_cards" alt=""></div>
+                <div class="col project_cards">
+                    <img src="/src/assets/img/project2-featured-15013609.jpg" class="" alt="">
+                    <div class="show_hover">
+                        <div class="show_hover_content">
+                            <div class="d-flex justify-content-center mb-3">
+                                <div class="work_icon me-3"><a href="#"><i class="fa-solid fa-link"></i></a></div>
+                                <div class="work_icon ms-3"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                            </div>
+                            <div>
+                                <h5>
+                                    Florida Heath Facility
+                                </h5>
+                            </div>
+                            <div class="font_12 mt-2">Commercial</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col project_cards">
+                    <img src="/src/assets/img/project1-featured-294276386.jpg" class="" alt="">
+                    <div class="show_hover">
+                        <div class="show_hover_content">
+                            <div class="d-flex justify-content-center mb-3">
+                                <div class="work_icon me-3"><a href="#"><i class="fa-solid fa-link"></i></a></div>
+                                <div class="work_icon ms-3"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                            </div>
+                            <div>
+                                <h5>
+                                    Maine Modernity
+                                </h5>
+                            </div>
+                            <div class="font_12 mt-2">Residential</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col project_cards">
+                    <img src="/src/assets/img/project3-featured-189023420.jpg" class="" alt="">
+                    <div class="show_hover">
+                        <div class="show_hover_content">
+                            <div class="d-flex justify-content-center mb-3">
+                                <div class="work_icon me-3"><a href="#"><i class="fa-solid fa-link"></i></a></div>
+                                <div class="work_icon ms-3"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                            </div>
+                            <div>
+                                <h5>Exclusive Urban Living</h5>
+                            </div>
+                            <div class="font_12 mt-2">Commercial</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col view_project_button">
@@ -39,7 +85,59 @@ export default {
 
 
         .project_cards{
-            width: 98%;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            
+            .show_hover{
+                transition: opacity 0.3s, transform 0.4s;
+                transform: scale(1, 0);
+                z-index: 2;
+                height: 100%;
+                width: calc( 100% - 22.5px);
+                opacity: 0;
+                position: absolute;
+                bottom: 0;
+                left:11.25px;
+                .show_hover_content{
+                    color:white;
+                    width: 60%;
+                    height: 40%;
+                    position:absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    .work_icon{
+                        width: 40px;
+                        height: 40px;
+                        background-color: white;
+                        border-radius: 100%;
+                        position: relative;
+                        padding: 1.6rem;
+                        i{  
+                            font-size: 18px;
+                            color: $soft_black_2;
+                            position:absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    .font_12{
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+            &:hover{
+                .show_hover{
+                    opacity: 1;
+                    background-color: $avada_yellow;
+                    transform: scale(1, 1)
+                }
+            }
         }
         
         p{
