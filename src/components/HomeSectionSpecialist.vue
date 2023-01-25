@@ -36,19 +36,19 @@ export default {
 
     .section_specialist_container{
         padding: 150px 0;
-        .my_hr{
-            width: 15%;
-            min-width: 150px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 2px;
-            color: transparent;
-            background-color: $avada_yellow;
-            opacity: 1;
-        }
-
+        
         p{
             color: $secondary_grey_font;
         }
+    }
+    .my_hr{
+        width: 15%;
+        min-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 2px;
+        color: transparent;
+        background-color: $avada_yellow;
+        opacity: 1;
     }
 </style>
