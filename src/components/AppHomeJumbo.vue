@@ -30,7 +30,7 @@ export default {
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <button type="button" class="my_button_black rounded-0" @mousedown="store.header_sections[store.isActiveSection].active = false" @click="store.header_sections[3].active = true">EXPLORE RECENT WORK</button>
+                        <button type="button" class="my_button_black rounded-0" @mousedown="store.header_sections[store.isActiveSection].active = false" @mouseup="store.isActiveSection = 3" @click="store.header_sections[3].active = true">EXPLORE RECENT WORK</button>
                     </div>
                     <div class="col-auto">
                         <button type="button" class="my_button rounded-0">GET A QUOTE TODAY</button>
@@ -83,5 +83,11 @@ export default {
         @include mixin.my_button;
         background-color: $button_black;
         color: white;
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover{
+            color:black;
+            background-color: $avada_yellow;
+        }
     }
 </style>

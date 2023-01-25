@@ -14,7 +14,7 @@ export default {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 </div>
             </div>
-            <div class="row justify-content-between">
+            <div class="row justify-content-between align-items-center">
                 <div class="col"><img src="/src/assets/img/project2-featured-15013609.jpg" class="project_cards" alt=""></div>
                 <div class="col"><img src="/src/assets/img/project1-featured-294276386.jpg" class="project_cards" alt=""></div>
                 <div class="col"><img src="/src/assets/img/project3-featured-189023420.jpg" class="project_cards" alt=""></div>
@@ -62,6 +62,7 @@ export default {
         .my_button_viewproject{
             background-color: transparent;
             border: none;
+            width: 30%;
             padding: 10px 32px;
             &:hover{
                 @include mixin.my_button;

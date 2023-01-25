@@ -27,7 +27,7 @@ export default {
                             </p>
                         </div>
                         <div>
-                            <button type="button" class="rounded-0 my_button" id="learn_more_button" @mousedown="store.header_sections[store.isActiveSection].active = false" @click="store.header_sections[1].active = true">LEARN MORE</button>
+                            <button type="button" class="rounded-0 my_button" id="learn_more_button" @mousedown="store.header_sections[store.isActiveSection].active = false" @mouseup="store.isActiveSection = 1" @click="store.header_sections[1].active = true">LEARN MORE</button>
                         </div>
                     </div>
                     <!-- latest-tweets col -->

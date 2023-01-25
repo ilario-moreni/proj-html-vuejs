@@ -30,6 +30,11 @@ export default {
             left: 50%;
             bottom: -3rem;
             transform: translate(-50%,-50%);
+            transition: border 0.2s, color 0.2s, background-color 0.2s;
+            &:hover{
+                border: 2px solid black;
+                background-color: white;
+            }
         }
     }
 </style>
