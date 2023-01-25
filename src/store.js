@@ -65,19 +65,23 @@ export const store = reactive({
     social: [
         {
             icon: 'fa-brands fa-facebook-f',
-            url: '#'
+            url: '#',
+            tooltip: 'facebook'
         },
         {
             icon: 'fa-brands fa-twitter',
-            url: '#'
+            url: '#',
+            tooltip: 'twitter'
         },
         {
             icon: 'fa-brands fa-youtube',
-            url: '#'
+            url: '#',
+            tooltip: 'youtube'
         },
         {
             icon: 'fa-brands fa-instagram',
-            url: '#'
+            url: '#',
+            tooltip: 'instragram'
         }
     ]
 })

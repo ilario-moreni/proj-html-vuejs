@@ -22,11 +22,14 @@ export default {
                 <!-- sections -->
                 <div class="mx-4">
                     <ul class="header_sections_ul">
-                        <li v-for="item in store.header_sections" class="p-4">
+                        <li v-for="item in store.header_sections"  :class="item.active ? 'activeSection' : ''" class="p-4">
                             <div>
-                                <a :href="item.url" :class="item.active ? 'activeSection' : ''">
+                                <a :href="item.url">
                                     {{ item.label }}
                                 </a>
+                            </div>
+                            <div class="white_hover_div">
+
                             </div>
                         </li>
                     </ul>
@@ -54,6 +57,7 @@ export default {
     .header_logo_container{
         img{
             width: 190px;
+            cursor: pointer;
         }
     }
 
@@ -68,13 +72,43 @@ export default {
         @include mixin.ul_flex_unstyled;
         text-transform: uppercase;
         font-weight: 500;
+
+        li:hover{
+            color: $avada_yellow;
+
+
+            .white_hover_div{
+                display: block;
+            }
+        }
+    }
+
+    .white_hover_div{
+        position: absolute;
+        display: none;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        bottom:-30px;
+        transform: translateX(-50%) rotate(45deg);
+        left:50%;
     }
 
     .activeSection{
-        color: $avada_yellow!important ;
+        a{
+            color: $avada_yellow!important ;
+        }
+        .white_hover_div{
+            display: block;
+        }
     }
 
     .my_button{
         @include mixin.my_button;
+        transition: background-color 0.2s, color 0.2s;
+        &:hover{
+            color:white;
+            background-color: $soft_black_2;
+        }
     }
 </style>

@@ -59,12 +59,16 @@ export default {
                 <div class="row justify-content-between">
                     <div class="col-auto">
                         <span>
-                            ©COPYRIGHT 2012 - 2023 | AVADA THEME BY <a href="">THEMEFUSION</a>  | ALL RIGHTS RESERVED | POWERED BY <a href="">WORDPRESS</a> 
+                            ©COPYRIGHT 2012 - 2023 | AVADA THEME BY <a class="hover_color_yellow" href="">THEMEFUSION</a>  | ALL RIGHTS RESERVED | POWERED BY <a class="hover_color_yellow" href="">WORDPRESS</a> 
                         </span>
                     </div>
                     <div class="col-auto">
                         <div>
-                            <i v-for="item in store.social" :class="item.icon" class="social_icon" :href="item.url"></i>
+                            <a v-for="item in store.social" href="#" class="my_tooltip" :href="item.url">
+                                <i :class="item.icon" class="social_icon"></i>
+                                <span class="tooltiptext">{{ item.tooltip }}</span>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -76,6 +80,13 @@ export default {
 <style lang="scss">
 @use '../styles/partials/variables.scss' as *;
 @use '../styles/partials/mixin.scss';
+
+    .hover_color_yellow{
+        transition: color 0.5s;
+        &:hover{
+            color: $avada_yellow;
+        }
+    }
 
     .bg_contacts{
         background-color: $soft_black;
@@ -143,4 +154,37 @@ export default {
             margin-left: 1.5rem;
         }
     }
+
+
+    /* tooltip */
+
+    .my_tooltip {
+    position: relative;
+
+        .tooltiptext {
+            opacity: 0;
+            width: 80px;
+            background-color: $soft_black_2;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: -3rem;
+            left: 50%;
+            transform: translateX(-40%);
+            transition: opacity 0.5s;
+        }
+        &:hover{
+            .tooltiptext{
+                opacity: 1;
+
+            }
+        }
+    }
+
+
 </style>
