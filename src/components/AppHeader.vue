@@ -22,8 +22,8 @@ export default {
                 <!-- sections -->
                 <div class="mx-4">
                     <ul class="header_sections_ul">
-                        <li v-for="item in store.header_sections"  :class="item.active ? 'activeSection' : ''" class="p-4">
-                            <div>
+                        <li v-for="(item, index) in store.header_sections" @click="$emit('makeActive', index)" :class="item.active ? 'activeSection' : ''" class="p-4" :key="index">
+                            <div >
                                 <a :href="item.url">
                                     {{ item.label }}
                                 </a>

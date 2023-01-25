@@ -2,6 +2,8 @@ import { reactive } from 'vue';
 
 export const store = reactive({
     /* header */
+
+    isActiveSection: '0',
     header_sections: [
         {
             label: 'Home',

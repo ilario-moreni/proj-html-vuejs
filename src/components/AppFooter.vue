@@ -27,7 +27,7 @@ export default {
                             </p>
                         </div>
                         <div>
-                            <button type="button" class="rounded-0 my_button" id="learn_more_button">LEARN MORE</button>
+                            <button type="button" class="rounded-0 my_button" id="learn_more_button" @mousedown="store.header_sections[store.isActiveSection].active = false" @click="store.header_sections[1].active = true">LEARN MORE</button>
                         </div>
                     </div>
                     <!-- latest-tweets col -->
@@ -38,7 +38,7 @@ export default {
                     <div class="col">
                         <h3>Contact us today</h3>
                         <ul class="footer_contacts_ul">
-                            <li v-for="item in store.contacts">
+                            <li v-for="(item, id) in store.contacts" :key="`contact${id}`">
                                 <div><i :class="item.icon"></i></div>
                                 <div class="font_14">{{item.contact_info}}</div>
                             </li>
@@ -64,7 +64,7 @@ export default {
                     </div>
                     <div class="col-auto">
                         <div>
-                            <a v-for="item in store.social" href="#" class="my_tooltip" :href="item.url">
+                            <a v-for="(item, index) in store.social" href="#" class="my_tooltip" :href="item.url" :key="`social${index}`">
                                 <i :class="item.icon" class="social_icon"></i>
                                 <span class="tooltiptext">{{ item.tooltip }}</span>
                             </a>

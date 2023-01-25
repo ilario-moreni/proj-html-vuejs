@@ -13,13 +13,22 @@ export default {
     return{
       store,
     }
+  },
+  methods:{
+    makeActive(id){
+      store.header_sections.forEach(element => {
+        element.active = false
+      });
+      store.header_sections[id].active = true;
+      store.isActiveSection = id;
+    }
   }
 }
 </script>
 
 <template lang="">
   <div class="App">
-    <AppHeader />
+    <AppHeader @makeActive="makeActive" />
     <AppHomeMain />
     <AppFooter />
   </div>

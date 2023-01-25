@@ -1,9 +1,15 @@
 <script>
 import JumboFreequote from './JumboFreequote.vue';
+import { store } from '../store';
 export default {
     name: 'AppHomeJumbo',
     components:{
         JumboFreequote,
+    },
+    data(){
+        return{
+            store,
+        }
     }
 }
 </script>
@@ -24,7 +30,7 @@ export default {
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <button type="button" class="my_button_black rounded-0">EXPLORE RECENT WORK</button>
+                        <button type="button" class="my_button_black rounded-0" @mousedown="store.header_sections[store.isActiveSection].active = false" @click="store.header_sections[3].active = true">EXPLORE RECENT WORK</button>
                     </div>
                     <div class="col-auto">
                         <button type="button" class="my_button rounded-0">GET A QUOTE TODAY</button>
