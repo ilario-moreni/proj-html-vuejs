@@ -158,6 +158,7 @@ export default {
         }
 
         .my_button_viewproject{
+            transition: background-color 0.2s;
             background-color: transparent;
             border: none;
             width: 30%;

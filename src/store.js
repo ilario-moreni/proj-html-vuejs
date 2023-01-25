@@ -33,7 +33,28 @@ export const store = reactive({
     ],
     /* main */
 
-
+    partners: [
+        {
+            name: 'Forest House',
+            logo: 'home-logo2-219096700-320x202',
+        },
+        {
+            name: 'Real Estate Market',
+            logo: 'home-logo1-219096700-320x202',
+        },
+        {
+            name: 'Food House',
+            logo: 'home-logo9-219096700-320x202',
+        },
+        {
+            name: 'Secure Home',
+            logo: 'home-logo10-219096700-320x202',
+        },
+        {
+            name: 'Real Estate',
+            logo: 'home-logo11-219096700-320x202',
+        }
+    ],
 
 
     /* footer */

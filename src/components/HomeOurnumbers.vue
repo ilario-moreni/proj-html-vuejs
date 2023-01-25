@@ -26,7 +26,7 @@ export default {
     computed:{
         numberCounter(){
             return this.numberArr.forEach(elem => {
-                this.animateValue(elem.type, 0, elem.num, 3000)
+                this.animateValue(elem.type, 0, elem.num, 2900)
             });
         }
     },
@@ -63,17 +63,17 @@ export default {
             </div>
             <div>
                 <div><i class="my_icon  fa-regular fa-building"></i></div>
-                <div class="numbers" id="projects">896</div>
+                <div class="numbers" id="projects">{{ numberCounter}}</div>
                 <div class="ournumbers_type">COMPLETED PROJECTS</div>
             </div>
             <div>
                 <div><i class="my_icon  fa-solid fa-users"></i></div>
-                <div class="numbers" id="trained">172</div>
+                <div class="numbers" id="trained">{{ numberCounter}}</div>
                 <div class="ournumbers_type">TRAINED PROFESSIONALS</div>
             </div>
             <div>
                 <div><i class="my_icon  fa-solid fa-globe"></i></div>
-                <div class="numbers" id="offices">19</div>
+                <div class="numbers" id="offices">{{ numberCounter}}</div>
                 <div class="ournumbers_type">INTERNATIONAL OFFICES</div>
             </div>
         </div>
