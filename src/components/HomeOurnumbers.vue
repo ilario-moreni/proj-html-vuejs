@@ -1,6 +1,49 @@
 <script>
 export default {
-    
+    name: 'HomeOurnumbers',
+    data(){
+        return{
+            numberArr:[
+                {
+                    type: 'applications',
+                    num: 3534
+                },
+                {
+                    type: 'projects',
+                    num: 896
+                },
+                {
+                    type: 'trained',
+                    num: 172
+                },
+                {
+                    type: 'offices',
+                    num: 19
+                }
+            ]
+        }
+    },
+    computed:{
+        numberCounter(){
+            return this.numberArr.forEach(elem => {
+                this.animateValue(elem.type, 0, elem.num, 3000)
+            });
+        }
+    },
+    methods: {
+        animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                document.getElementById(obj).innerHTML = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+    }
 }
 </script>
 
@@ -15,22 +58,22 @@ export default {
         <div  class="container my_number_row text-center">
             <div>
                 <div><i class="my_icon rotate-180 fa-solid fa-tablet"></i></div>
-                <div class="numbers">3534</div>
+                <div class="numbers" id="applications">{{ numberCounter }}</div>
                 <div class="ournumbers_type">PLANNING APPLICATIONS</div>
             </div>
             <div>
                 <div><i class="my_icon  fa-regular fa-building"></i></div>
-                <div class="numbers">896</div>
+                <div class="numbers" id="projects">896</div>
                 <div class="ournumbers_type">COMPLETED PROJECTS</div>
             </div>
             <div>
                 <div><i class="my_icon  fa-solid fa-users"></i></div>
-                <div class="numbers">172</div>
+                <div class="numbers" id="trained">172</div>
                 <div class="ournumbers_type">TRAINED PROFESSIONALS</div>
             </div>
             <div>
                 <div><i class="my_icon  fa-solid fa-globe"></i></div>
-                <div class="numbers">19</div>
+                <div class="numbers" id="offices">19</div>
                 <div class="ournumbers_type">INTERNATIONAL OFFICES</div>
             </div>
         </div>
