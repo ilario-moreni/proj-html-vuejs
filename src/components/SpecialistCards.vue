@@ -13,11 +13,11 @@ export default {
                     <h3>Buildings</h3>
                     <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
                 </div>
-                <div class="back_card">
+                <!-- <div class="back_card rounded-3">
                     <h4>titolo</h4>
                     <p>Quis autem vel eum iure reprederit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum.</p>
                     <button type="button" class="rounded-0 my_button_back_card" id="get_quote_button">GET QUOTE</button>
-                </div>
+                </div> -->
             </div>
             <div class="col mx-3 my_specialist_card rounded-3">
                 <div class="specialist_icon my-2"><i class="fa-solid fa-rotate"></i></div>
@@ -74,13 +74,28 @@ export default {
             height: 100%;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%) scale(0, 1);
             background-color: $avada_yellow;
-        }
+            transition: transform 0.4s;
 
+           
+        }
+        
+
+        /* .front_card{
+            transform: scale(1, 1);
+            transition: transform 0.4s;
+        }
         &:hover{
+            .back_card{
+                transform: translate(-50%, -50%) scale(1, 1);
+            }
 
-        }
+            .front_card{
+                transform: scale(0, 1);
+            }
+
+        } */
     }
 
     .my_button_back_card{
@@ -90,4 +105,6 @@ export default {
             color:white;
         }
     }
+
+   
 </style>
