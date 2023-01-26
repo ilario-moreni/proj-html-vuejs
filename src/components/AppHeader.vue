@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template lang="">
-    <div class="bg-white fixed-top py-2">
+    <div class="bg-white header_shadow fixed-top py-2">
         <div class="AppHeader container py-4">
             <!-- left-side header -->
             <div class="header_logo_container">
@@ -52,6 +52,10 @@ export default {
         background-color: white;
         display: flex;
         justify-content: space-between;
+    }
+    
+    .header_shadow{
+        box-shadow: 0 0 5px 5px rgb(0 0 0 / 10%);
     }
 
     .header_logo_container{
